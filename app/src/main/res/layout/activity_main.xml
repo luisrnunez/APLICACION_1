@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="1dp"
+        android:background="#4D03A9F4"
+        android:text="Formulario de inscripcion"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtCedula"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="Cedula"
+        android:inputType="number"
+        android:maxLength="10" />
+
+    <EditText
+        android:id="@+id/edtNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="146dp"
+        android:ems="10"
+        android:hint="Nombres"
+        android:inputType="textCapCharacters"
+        android:maxLength="500"
+        android:textIsSelectable="false" />
+
+    <EditText
+        android:id="@+id/edtFechaNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="205dp"
+        android:ems="10"
+        android:hint="Fecha de Nacimiento"
+        android:inputType="datetime"
+        android:maxLength="8" />
+
+    <EditText
+        android:id="@+id/edtCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="265dp"
+        android:ems="10"
+        android:hint="Ciudad"
+        android:inputType="textCapCharacters" />
+
+    <EditText
+        android:id="@+id/edtCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="329dp"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edtTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="454dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="phone"
+        android:maxLength="10" />
+
+    <RadioGroup
+        android:id="@+id/rgGenero"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="390dp"
+        android:ems="10"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rMasculino"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:textIsSelectable="true"/>
+
+
+        <RadioButton
+            android:id="@+id/rFemenino"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:text="Femenino" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="521dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="Limpiar" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="579dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="Enviar" />
+
+
+</RelativeLayout>
